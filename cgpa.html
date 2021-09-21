@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <figure class="text-center p-5"><h1 style="font-size: 1.5cm; color: rgb(59, 204, 30); font-family: Georgia, 'Times New Roman', Times, serif;">Arithmetic Calculator</h1></figure>
+
+    <script>
+        function CGPA(){
+            var a = parseFloat(document.getElementById("sema").value);    
+            var b = parseFloat(document.getElementById("semb").value);
+            var c = parseFloat(document.getElementById("semc").value);
+            var d = parseFloat(document.getElementById("semd").value);
+            var e = parseFloat(document.getElementById("seme").value);
+            var f = parseFloat(document.getElementById("semf").value);
+            var g = parseFloat(document.getElementById("semg").value);
+            var h = parseFloat(document.getElementById("semh").value);
+            document.getElementById("result").value=((a + b + c + d + e + f + g + h)/8);
+        }
+    </script>
+
+    <div class="container w-25">
+        <div class="row">
+            <div class="col w-25"><label for="sem1" class="form-label w-auto">Enter Sem 1 GPA</label>
+            <input type="number" class="form-control w-auto" id="sema" placeholder="1st sem GPA"></div>
+        </div><br>
+        <div class="row">
+            <div class="col w-25"><label for="sem2" class="form-label w-auto">Enter Sem 2 GPA</label>
+            <input type="number" class="form-control w-auto" id="semb" placeholder="2nd sem GPA"></div>
+        </div><br>
+        <div class="row">
+            <div class="col w-25"><label for="sem3" class="form-label w-auto">Enter Sem 3 GPA</label>
+            <input type="number" class="form-control w-auto" id="semc" placeholder="3d sem GPA"></div>
+        </div><br>
+        <div class="row">
+            <div class="col w-25"><label for="sem4" class="form-label w-auto">Enter Sem 4 GPA</label>
+            <input type="number" class="form-control w-auto" id="semd" placeholder="4th sem GPA"></div>
+        </div><br>
+        <div class="row">
+            <div class="col w-25"><label for="sem5" class="form-label w-auto">Enter Sem 5 GPA</label>
+            <input type="number" class="form-control w-auto" id="seme" placeholder="5th sem GPA"></div>
+        </div><br>
+        <div class="row">
+            <div class="col w-25"><label for="sem6" class="form-label w-auto">Enter Sem 6 GPA</label>
+            <input type="number" class="form-control w-auto" id="semf" placeholder="6th sem GPA"></div>
+        </div><br>
+        <div class="row">
+            <div class="col w-25"><label for="sem7" class="form-label w-auto">Enter Sem 7 GPA</label>
+            <input type="number" class="form-control w-auto" id="semg" placeholder="7th sem GPA"></div>
+        </div><br>
+        <div class="row">
+            <div class="col w-25"><label for="sem8" class="form-label w-auto">Enter Sem 8 GPA</label>
+            <input type="number" class="form-control w-auto" id="semh" placeholder="8th sem GPA"></div>
+        </div><br>
+        <button onclick="CGPA();" type="submit" class="btn btn-primary text-center">Calculate CGPA</button>
+        <br><br>
+        <div class="row">
+            <div class="col w-25"><label for="CGPA" class="form-label w-auto">Over all CGPA</label>
+            <input type="number" class="form-control w-auto" id="result" placeholder="CGPA"></div>
+        </div><br>
+    
+    </div>
+</body>
+</html>
